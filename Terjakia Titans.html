@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Terjakia Titans</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--tx:#0c1b3a;--mut:#5b6785;--navy:#0b1f4d;--navy2:#13306e;--gold:#c9a24a;--line:#dde3f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070f24;--card:#0e1b3d;--tx:#eef2fb;--mut:#9aa8c7;--line:#223260}}
+:root[data-theme="dark"]{--bg:#070f24;--card:#0e1b3d;--tx:#eef2fb;--mut:#9aa8c7;--line:#223260}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Barlow,system-ui,sans-serif}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;margin:0;line-height:1.05}
+a{color:inherit}
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5;padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;gap:12px;padding:10px 16px;max-width:1100px;margin:auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 22px 'Barlow Condensed',sans-serif;letter-spacing:.5px}
+.logo{width:38px;height:38px;border-radius:50%;border:2px solid var(--gold);display:grid;place-items:center;font:800 16px 'Barlow Condensed',sans-serif;color:var(--gold)}
+nav{margin-left:auto;display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+nav a{color:#dbe3f7;text-decoration:none;padding:8px 12px;border-radius:8px;white-space:nowrap;font-weight:500}
+nav a.on{background:var(--navy2);color:#fff}
+main{max-width:1100px;margin:auto;padding:20px 16px 60px;overflow-x:hidden}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;border-radius:16px;padding:40px 24px;margin-bottom:24px;border-bottom:4px solid var(--gold)}
+.hero h1{font-size:clamp(40px,9vw,76px);font-weight:800}
+.hero p{margin:10px 0 0;color:#c9d4ee;max-width:46ch}
+.tag{letter-spacing:2px;font:700 18px 'Barlow Condensed',sans-serif;color:var(--gold);margin-bottom:8px}
+h2{font-size:30px;font-weight:700;margin:28px 0 12px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+.g2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+.pc{text-decoration:none;display:block;position:relative;overflow:hidden;padding:0}
+.ph{aspect-ratio:1;background:var(--navy);display:grid;place-items:center;color:#3a5190;font:800 64px 'Barlow Condensed',sans-serif;background-size:cover;background-position:center}
+.pc .in{padding:10px 12px}
+.pc b{font:700 20px 'Barlow Condensed',sans-serif;display:block}
+.num{position:absolute;top:8px;right:8px;background:var(--gold);color:var(--navy);font:800 18px 'Barlow Condensed',sans-serif;padding:0 8px;border-radius:6px}
+.mut{color:var(--mut);font-size:14px}
+.pill{display:inline-block;font-size:13px;font-weight:600;padding:2px 10px;border-radius:99px;background:var(--navy);color:#fff}
+.pill.w{background:#1f7a46}.pill.l{background:#a33a3a}.pill.u{background:var(--navy2)}.pill.o{background:#7a5c10}
+.stat{text-align:center}.stat b{display:block;font:800 36px 'Barlow Condensed',sans-serif}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+input,select,textarea,button{font:inherit;color:var(--tx);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px;width:100%;min-height:44px}
+textarea{min-height:90px}
+label{display:block;font-size:14px;font-weight:600;margin:10px 0 4px}
+button,.btn{cursor:pointer;width:auto;background:var(--navy);color:#fff;border:0;font-weight:600;padding:10px 18px;text-decoration:none;display:inline-block;border-radius:8px}
+button.s{background:transparent;color:var(--tx);border:1px solid var(--line)}
+button.d{background:#a33a3a}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.fx{display:flex;gap:12px;align-items:center}
+.fx .dt{min-width:62px;text-align:center;background:var(--navy);color:#fff;border-radius:8px;padding:6px;font:700 20px 'Barlow Condensed',sans-serif}
+.dt small{display:block;font-size:12px;font-weight:600;color:var(--gold)}
+.two{display:grid;gap:0 12px;grid-template-columns:1fr 1fr}
+.prof{display:grid;gap:20px;grid-template-columns:minmax(0,260px) 1fr}
+@media(max-width:640px){.prof{grid-template-columns:1fr}.bar{flex-wrap:wrap}nav{margin-left:0;width:100%}}
+footer{text-align:center;color:var(--mut);padding:24px 16px;font-size:14px}
+.tw{overflow-x:auto}
+</style>
+</head>
+<body>
+<header><div class="bar"><a class="brand" href="#home"><span class="logo">TT</span>Terjakia Titans</a>
+<nav id="nav"></nav></div></header>
+<main id="app"></main>
+<footer>© Terjakia Titans · THE GAME. THE GRIT. THE TITANS.</footer>
+<script>
+var K='tt_v1',adm=false,editF=null,editP=null;
+var NM=[["S MALLICK","93","All-rounder"],["LEXLODR","321","Batsman"],["P.K","7"],["SUDAM","228"],["RIHAN","1","All-rounder · Captain"],["LUCKY","11"],["BABUSAN","64"],["RAJU","32"],["DAVID","33"],["PRASHANT","45"],["MR. GOUTAM","69"],["ABHI","18","Wicketkeeper"],["CM","111"],["SAMIR","63","Wicketkeeper"],["DILLIP","03"],["RAJESH","96"]];
+function def(){return{players:NM.map(function(p,i){return{id:i+1,name:p[0],jersey:p[1],role:p[2]||'To be confirmed',bat:'',bowl:'',bio:'',photo:''}}),fixtures:[],news:[]}}
+var D;try{D=JSON.parse(localStorage.getItem(K))}catch(e){}if(!D||!D.players)D=def();
+function save(){try{localStorage.setItem(K,JSON.stringify(D))}catch(e){alert('Storage is full. Remove some photos or export a backup.')}}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function v(id){return document.getElementById(id).value.trim()}
+function dd(d){if(!d)return'—';var x=new Date(d+'T00:00');return isNaN(x)?'—':x.toLocaleDateString(undefined,{day:'numeric',month:'short',year:'numeric'})}
+function dbox(d){var x=new Date(d+'T00:00');return isNaN(x)?'<div class="dt">—</div>':'<div class="dt">'+x.getDate()+'<small>'+x.toLocaleDateString(undefined,{month:'short'})+'</small></div>'}
+var PAGES=[['home','Home'],['squad','Squad'],['fixtures','Fixtures'],['results','Results'],['stats','Stats'],['news','News'],['admin','Admin']];
+function pill(f){var c=f.status=='Completed'?(f.result=='Won'?'w':f.result=='Lost'?'l':'o'):f.status=='Live'?'l':'u';return'<span class="pill '+c+'">'+esc(f.status=='Completed'&&f.result?f.result:f.status)+'</span>'}
+function fxCard(f){return'<div class="card fx">'+dbox(f.date)+'<div style="flex:1"><b>Titans vs '+esc(f.opp||'—')+'</b><div class="mut">'+esc(f.tour||'—')+' · '+esc(f.venue||'—')+' · '+esc(f.fmt||'—')+(f.time?' · '+esc(f.time):'')+'</div>'+(f.status=='Completed'?'<div>'+esc(f.us||'—')+' vs '+esc(f.them||'—')+(f.pom?' · POM: '+esc(f.pom):'')+'</div>'+(f.summary?'<div class="mut">'+esc(f.summary)+'</div>':''):'')+'</div>'+pill(f)+'</div>'}
+function pcard(p){return'<a class="pc card" href="#player-'+p.id+'"><span class="num">'+esc(p.jersey)+'</span><div class="ph"'+(p.photo?' style="background-image:url('+p.photo+');color:transparent"':'')+'>'+esc(p.name.charAt(0))+'</div><div class="in"><b>'+esc(p.name)+'</b><span class="mut">'+esc(p.role)+'</span></div></a>'}
+function done(){return D.fixtures.filter(function(f){return f.status=='Completed'}).sort(function(a,b){return b.date>a.date?1:-1})}
+function up(){return D.fixtures.filter(function(f){return f.status!='Completed'}).sort(function(a,b){return a.date>b.date?1:-1})}
+function S(){var c=done(),n=c.length;if(!n)return null;var w=c.filter(function(f){return f.result=='Won'}).length,l=c.filter(function(f){return f.result=='Lost'}).length;return{n:n,w:w,l:l,p:Math.round(w/n*100)}}
+function statBox(){var s=S();if(!s)return'<div class="card mut">Stats Not Available Yet. They appear after the first completed match is recorded.</div>';return'<div class="grid"><div class="card stat"><b>'+s.n+'</b>Played</div><div class="card stat"><b>'+s.w+'</b>Won</div><div class="card stat"><b>'+s.l+'</b>Lost</div><div class="card stat"><b>'+s.p+'%</b>Win rate</div></div>'}
+function none(){return'<div class="card mut">No Match Data Available Yet</div>'}
+var V={
+home:function(){var c=done()[0],u=up()[0],ft=[5,1,12,14].map(function(i){return D.players[i-1]}).filter(Boolean);
+return'<div class="hero"><div class="tag">THE GAME. THE GRIT. THE TITANS.</div><h1>Terjakia Titans</h1><p>The official home of our village cricket team from Terjakia, Odisha.</p></div>'+
+'<div class="grid g2"><div><h2 style="margin-top:0">Latest result</h2>'+(c?fxCard(c):none())+'</div><div><h2 style="margin-top:0">Next match</h2>'+(u?fxCard(u):none())+'</div></div>'+
+'<h2>Featured players</h2><div class="grid">'+ft.map(pcard).join('')+'</div><p><a href="#squad">See the full squad</a></p>'+
+'<h2>Team stats</h2>'+statBox()+'<h2>Announcements</h2>'+newsList(3)},
+squad:function(){return'<h2 style="margin-top:0">Squad</h2><p class="mut">'+D.players.length+' players. Tap a card for the profile.</p><div class="grid">'+D.players.map(pcard).join('')+'</div>'},
+fixtures:function(){var u=up();return'<h2 style="margin-top:0">Fixtures</h2>'+(u.length?'<div class="grid g2">'+u.map(fxCard).join('')+'</div>':none())},
+results:function(){var c=done();return'<h2 style="margin-top:0">Match results</h2>'+(c.length?'<div class="grid g2">'+c.map(fxCard).join('')+'</div>':none())},
+stats:function(){var rows=D.players.filter(function(p){return p.name}).map(function(p){var m=done().filter(function(f){return f.pom==p.name}).length;return'<tr><td>'+esc(p.name)+'</td><td>'+(S()?m:'—')+'</td><td>—</td><td>—</td><td>—</td></tr>'}).join('');
+return'<h2 style="margin-top:0">Team statistics</h2>'+statBox()+'<h2>Player statistics</h2><p class="mut">Runs, wickets and catches show “—” until verified scorecards are added in a later phase. Player of the Match counts come from completed results.</p><div class="card tw"><table style="width:100%;border-collapse:collapse;min-width:420px"><tr style="text-align:left"><th>Player</th><th>POM</th><th>Runs</th><th>Wkts</th><th>Catches</th></tr>'+rows+'</table></div>'},
+news:function(){return'<h2 style="margin-top:0">News and announcements</h2>'+newsList(99)},
+admin:function(){return adminView()}
+};
+function newsList(n){var a=D.news.slice().sort(function(x,y){return y.date>x.date?1:-1}).slice(0,n);return a.length?'<div class="grid g2">'+a.map(function(x){return'<div class="card"><b style="font:700 22px Barlow Condensed,sans-serif">'+esc(x.title)+'</b><div class="mut">'+dd(x.date)+'</div><p>'+esc(x.body)+'</p></div>'}).join('')+'</div>':'<div class="card mut">No announcements yet.</div>'}
+function profile(id){var p=D.players.filter(function(x){return x.id==id})[0];if(!p)return'<p>Player not found. <a href="#squad">Back to squad</a></p>';
+var S2='<span class="mut">Statistics not available yet</span>';
+return'<p><a href="#squad">Back to squad</a></p><div class="prof"><div class="card pc"><span class="num">'+esc(p.jersey)+'</span><div class="ph"'+(p.photo?' style="background-image:url('+p.photo+');color:transparent"':'')+'>'+esc(p.name.charAt(0))+'</div></div><div><h1 style="font-size:48px">'+esc(p.name)+'</h1><p class="mut">Jersey '+esc(p.jersey)+' · '+esc(p.role)+'</p>'+
+'<div class="grid g2"><div class="card"><b>Batting style</b><br>'+esc(p.bat||'To be confirmed')+'</div><div class="card"><b>Bowling style</b><br>'+esc(p.bowl||'To be confirmed')+'</div></div>'+
+'<h2>Biography</h2><p>'+esc(p.bio||'Biography to be confirmed.')+'</p><h2>Batting</h2>'+S2+'<h2>Bowling</h2>'+S2+'<h2>Fielding</h2>'+S2+'<h2>Match history</h2>'+S2+'</div></div>'}
+function render(){var h=location.hash.slice(1)||'home',pg=h.indexOf('player-')==0?'squad':h;
+document.getElementById('nav').innerHTML=PAGES.map(function(p){return'<a href="#'+p[0]+'"'+(p[0]==pg?' class="on"':'')+'>'+p[1]+'</a>'}).join('');
+document.getElementById('app').innerHTML=h.indexOf('player-')==0?profile(h.slice(7)):(V[h]?V[h]():V.home());window.scrollTo(0,0)}
+window.addEventListener('hashchange',render);
+/* ---------- Admin ---------- */
+function adminView(){
+if(!adm){var has=localStorage.getItem('tt_pin');return'<h2 style="margin-top:0">Admin</h2><div class="card" style="max-width:380px"><p class="mut">'+(has?'Enter your admin PIN.':'First time here. Choose an admin PIN (at least 4 characters).')+'</p><label for="pin">PIN</label><input id="pin" type="password" autocomplete="off"><p><button onclick="login()">'+(has?'Log in':'Set PIN')+'</button></p><p class="mut" style="font-size:13px">This PIN only protects this phone or browser. Real login for all devices comes with the Firebase version.</p></div>'}
+var f=editF?D.fixtures.filter(function(x){return x.id==editF})[0]:null;f=f||{};
+var p=editP?D.players.filter(function(x){return x.id==editP})[0]:null;
+function opt(a,s){return a.map(function(o){return'<option'+(o==s?' selected':'')+'>'+o+'</option>'}).join('')}
+return'<div class="row"><h2 style="margin:0">Admin</h2><button class="s" onclick="adm=false;render()">Log out</button></div>'+
+'<h2>Players</h2><div class="card"><label for="ps">Choose player</label><select id="ps" onchange="editP=this.value;render()"><option value="">Select…</option>'+D.players.map(function(x){return'<option value="'+x.id+'"'+(x.id==editP?' selected':'')+'>'+esc(x.name)+' ('+esc(x.jersey)+')</option>'}).join('')+'</select>'+
+(p?'<div class="two"><div><label for="pn">Name</label><input id="pn" value="'+esc(p.name)+'"></div><div><label for="pj">Jersey</label><input id="pj" value="'+esc(p.jersey)+'"></div></div><label for="pr">Role</label><input id="pr" value="'+esc(p.role)+'"><div class="two"><div><label for="pb">Batting style</label><input id="pb" value="'+esc(p.bat)+'"></div><div><label for="pw">Bowling style</label><input id="pw" value="'+esc(p.bowl)+'"></div></div><label for="pbio">Biography</label><textarea id="pbio">'+esc(p.bio)+'</textarea><label for="pf">Photo</label><input id="pf" type="file" accept="image/*"><p><button onclick="saveP()">Save player</button></p>':'')+'</div>'+
+'<h2>'+(f.id?'Edit fixture':'Add fixture')+'</h2><div class="card"><div class="two"><div><label for="fd">Date</label><input id="fd" type="date" value="'+esc(f.date)+'"></div><div><label for="ft">Time</label><input id="ft" type="time" value="'+esc(f.time)+'"></div></div><label for="fo">Opponent</label><input id="fo" value="'+esc(f.opp)+'"><div class="two"><div><label for="fn">Tournament</label><input id="fn" value="'+esc(f.tour)+'"></div><div><label for="fv">Venue</label><input id="fv" value="'+esc(f.venue)+'"></div></div><div class="two"><div><label for="ff">Format</label><input id="ff" placeholder="e.g. T20" value="'+esc(f.fmt)+'"></div><div><label for="fs">Status</label><select id="fs">'+opt(['Upcoming','Live','Completed'],f.status)+'</select></div></div>'+
+'<p class="mut">Fill these when the match is completed:</p><div class="two"><div><label for="fu">Titans score</label><input id="fu" placeholder="e.g. 142/6 (20)" value="'+esc(f.us)+'"></div><div><label for="fh">Opponent score</label><input id="fh" value="'+esc(f.them)+'"></div></div><div class="two"><div><label for="fr">Result</label><select id="fr">'+opt(['Won','Lost','Tied','No result'],f.result)+'</select></div><div><label for="fp">Player of the Match</label><select id="fp"><option value="">—</option>'+opt(D.players.map(function(x){return x.name}),f.pom)+'</select></div></div><label for="fm">Match summary</label><textarea id="fm">'+esc(f.summary)+'</textarea><p><button onclick="saveF()">Save fixture</button> '+(f.id?'<button class="s" onclick="editF=null;render()">Cancel</button>':'')+'</p></div>'+
+'<div class="grid g2" style="margin-top:12px">'+D.fixtures.map(function(x){return'<div>'+fxCard(x)+'<p><button class="s" onclick="editF='+x.id+';render();window.scrollTo(0,400)">Edit</button> <button class="d" onclick="delF('+x.id+')">Delete</button></p></div>'}).join('')+'</div>'+
+'<h2>Announcements</h2><div class="card"><label for="nt">Title</label><input id="nt"><label for="nb">Message</label><textarea id="nb"></textarea><p><button onclick="addN()">Publish</button></p></div><div class="grid g2" style="margin-top:12px">'+D.news.map(function(x,i){return'<div class="card"><b>'+esc(x.title)+'</b><div class="mut">'+dd(x.date)+'</div><p><button class="d" onclick="delN('+i+')">Delete</button></p></div>'}).join('')+'</div>'+
+'<h2>Backup</h2><div class="card"><p class="mut">Data lives in this browser only. Copy a backup now and then.</p><p><button onclick="exp()">Show backup</button></p><textarea id="bk" placeholder="Paste a backup here to restore"></textarea><p><button class="s" onclick="imp()">Restore from backup</button></p></div>'}
+function sha(s){return crypto.subtle.digest('SHA-256',new TextEncoder().encode('tt'+s)).then(function(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return('0'+x.toString(16)).slice(-2)}).join('')})}
+function login(){var p=document.getElementById('pin').value;if(p.length<4){alert('Use at least 4 characters.');return}
+sha(p).then(function(h){var s=localStorage.getItem('tt_pin');if(!s){localStorage.setItem('tt_pin',h);adm=true;render()}else if(s==h){adm=true;render()}else alert('Wrong PIN.')})}
+function saveP(){var p=D.players.filter(function(x){return x.id==editP})[0];p.name=v('pn')||p.name;p.jersey=v('pj')||p.jersey;p.role=v('pr')||'To be confirmed';p.bat=v('pb');p.bowl=v('pw');p.bio=v('pbio');
+var fl=document.getElementById('pf').files[0];
+if(!fl){save();alert('Player saved.');render();return}
+var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){var c=document.createElement('canvas'),m=Math.min(1,360/Math.max(im.width,im.height));c.width=im.width*m;c.height=im.height*m;c.getContext('2d').drawImage(im,0,0,c.width,c.height);p.photo=c.toDataURL('image/jpeg',.75);save();alert('Player saved.');render()};im.src=r.result};r.readAsDataURL(fl)}
+function saveF(){if(!v('fd')||!v('fo')){alert('Add a date and an opponent.');return}
+var st=v('fs'),o={id:editF||Date.now(),date:v('fd'),time:v('ft'),opp:v('fo'),tour:v('fn'),venue:v('fv'),fmt:v('ff'),status:st,us:v('fu'),them:v('fh'),result:st=='Completed'?v('fr'):'',pom:v('fp'),summary:v('fm')};
+if(editF)D.fixtures=D.fixtures.map(function(x){return x.id==editF?o:x});else D.fixtures.push(o);editF=null;save();render()}
+function delF(id){if(confirm('Delete this fixture?')){D.fixtures=D.fixtures.filter(function(x){return x.id!=id});save();render()}}
+function addN(){if(!v('nt')){alert('Add a title.');return}D.news.push({title:v('nt'),body:v('nb'),date:new Date().toISOString().slice(0,10)});save();render()}
+function delN(i){if(confirm('Delete this announcement?')){D.news.splice(i,1);save();render()}}
+function exp(){var t=document.getElementById('bk');t.value=JSON.stringify(D);t.select()}
+function imp(){try{var x=JSON.parse(v('bk'));if(!x.players)throw 0;D=x;save();alert('Restored.');render()}catch(e){alert('That backup could not be read.')}}
+render();
+</script>
+</body>
+</html>
